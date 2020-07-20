@@ -25,7 +25,9 @@
               "apps/ng-demo/src/favicon.png",
               "apps/ng-demo/src/assets"
             ],
-            "styles": ["apps/ng-demo/src/styles.scss"],
+            "styles": [
+              "apps/ng-demo/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,10 @@
               "apps/ng-demo/tsconfig.app.json",
               "apps/ng-demo/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ng-demo/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ng-demo/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ng-demo-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ng-demo-e2e/**/*"]
+            "tsConfig": [
+              "apps/ng-demo-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ng-demo-e2e/**/*"
+            ]
           }
         }
       }
@@ -137,7 +147,10 @@
               "libs/ng-demo/ui/tsconfig.lib.json",
               "libs/ng-demo/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ng-demo/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ng-demo/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -169,7 +182,10 @@
               "libs/shared/ui/tsconfig.lib.json",
               "libs/shared/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -188,29 +204,32 @@
         }
       }
     },
-    "feature-shell": {
+    "ng-demo-feature-shell": {
       "projectType": "library",
-      "root": "libs/feature-shell",
-      "sourceRoot": "libs/feature-shell/src",
+      "root": "libs/ng-demo/feature-shell",
+      "sourceRoot": "libs/ng-demo/feature-shell/src",
       "prefix": "ngd",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/feature-shell/tsconfig.lib.json",
-              "libs/feature-shell/tsconfig.spec.json"
+              "libs/ng-demo/feature-shell/tsconfig.lib.json",
+              "libs/ng-demo/feature-shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature-shell/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ng-demo/feature-shell/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/feature-shell/jest.config.js",
-            "tsConfig": "libs/feature-shell/tsconfig.spec.json",
+            "jestConfig": "libs/ng-demo/feature-shell/jest.config.js",
+            "tsConfig": "libs/ng-demo/feature-shell/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/feature-shell/src/test-setup.ts"
+            "setupFile": "libs/ng-demo/feature-shell/src/test-setup.ts"
           }
         }
       },

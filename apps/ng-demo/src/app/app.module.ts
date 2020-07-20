@@ -11,8 +11,8 @@ import { RouterModule } from '@angular/router';
         {
           path: 'ng-demo',
           loadChildren: () =>
-            import('@nx-playground/feature-shell').then(
-              (module) => module.FeatureShellModule
+            import('@nx-playground/ng-demo/feature-shell').then(
+              (module) => module.NgDemoFeatureShellModule
             ),
         },
       ],
