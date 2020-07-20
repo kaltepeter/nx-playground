@@ -123,6 +123,38 @@
           }
         }
       }
+    },
+    "ng-demo-features": {
+      "projectType": "library",
+      "root": "libs/ng-demo/features",
+      "sourceRoot": "libs/ng-demo/features/src",
+      "prefix": "ngd",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ng-demo/features/tsconfig.lib.json",
+              "libs/ng-demo/features/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ng-demo/features/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ng-demo/features/jest.config.js",
+            "tsConfig": "libs/ng-demo/features/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ng-demo/features/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

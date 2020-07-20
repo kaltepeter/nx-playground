@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-playground/ng-demo/features": ["libs/ng-demo/features/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

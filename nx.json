@@ -28,6 +28,9 @@
     "ng-demo-e2e": {
       "tags": [],
       "implicitDependencies": ["ng-demo"]
+    },
+    "ng-demo-features": {
+      "tags": ["scope:ng-demo", "type:feature"]
     }
   }
 }
