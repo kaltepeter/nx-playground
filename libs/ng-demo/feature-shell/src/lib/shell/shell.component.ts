@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shell.component.scss']
 })
 export class ShellComponent implements OnInit {
+  links = ['link 1', 'link 2', 'link 3']
 
   constructor() { }
 

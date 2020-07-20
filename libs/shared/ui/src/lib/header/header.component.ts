@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit, NgModule, Input } from '@angular/core';
 import { MatTabsModule } from "@angular/material/tabs";
 import { ThemePalette } from '@angular/material/core';
 
@@ -8,7 +8,7 @@ import { ThemePalette } from '@angular/material/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  links = ['First', 'Second', 'Third'];
+  @Input() links: String[];
   activeLink = this.links[0];
   background: ThemePalette = undefined;
 
