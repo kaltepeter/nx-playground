@@ -22,7 +22,7 @@
             "tsConfig": "apps/ng-demo/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "apps/ng-demo/src/favicon.ico",
+              "apps/ng-demo/src/favicon.png",
               "apps/ng-demo/src/assets"
             ],
             "styles": ["apps/ng-demo/src/styles.scss"],
