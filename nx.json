@@ -21,5 +21,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "ng-demo": {
+      "tags": ["scope:ng-demo", "type:app"]
+    },
+    "ng-demo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ng-demo"]
+    }
+  }
 }
