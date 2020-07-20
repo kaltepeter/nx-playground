@@ -9,16 +9,19 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot(
       [
         {
-          path: 'ng-demo-features',
+          path: 'ng-demo',
           loadChildren: () =>
-            import('@nx-playground/ng-demo/features').then(
-              (module) => module.NgDemoFeaturesModule
+            import('@nx-playground/feature-shell').then(
+              (module) => module.FeatureShellModule
             ),
         },
       ],
       { initialNavigation: 'enabled' }
     ),
   ],
-  bootstrap: [],
 })
-export class AppModule {}
+export class AppModule {
+  ngDoBootstrap(app) {
+    console.log('in ngDoBootstrap', app)
+   }
+}

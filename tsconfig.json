@@ -16,9 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-playground/ng-demo/features": ["libs/ng-demo/features/src/index.ts"],
       "@nx-playground/ng-demo/ui": ["libs/ng-demo/ui/src/index.ts"],
-      "@nx-playground/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@nx-playground/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@nx-playground/feature-shell": ["libs/feature-shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

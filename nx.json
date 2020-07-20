@@ -29,14 +29,14 @@
       "tags": [],
       "implicitDependencies": ["ng-demo"]
     },
-    "ng-demo-features": {
-      "tags": ["scope:ng-demo", "type:feature"]
-    },
     "ng-demo-ui": {
       "tags": ["scope:ng-demo", "type:ui"]
     },
     "shared-ui": {
       "tags": ["scope:shared", "type:ui"]
+    },
+    "feature-shell": {
+      "tags": ["scope:ng-demo", "type:feature"]
     }
   }
 }
